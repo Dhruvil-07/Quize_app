@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_quize/screen/question_screen.dart';
 import 'package:my_quize/screen/start_screen.dart';
@@ -6,7 +7,14 @@ import 'package:my_quize/theme/theme_data.dart';
 
 void main()
 {
-   runApp(my_quize());
+   WidgetsFlutterBinding.ensureInitialized();
+   //set specific device orientation mode
+   SystemChrome.setPreferredOrientations([
+     DeviceOrientation.portraitUp,
+   ]).then((value){
+     runApp(my_quize());
+   });
+
 }
 
 class my_quize extends StatelessWidget
