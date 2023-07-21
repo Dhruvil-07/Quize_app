@@ -2,6 +2,16 @@
 
 A new Flutter project.
 
+Simple Quize App ,Create Using flutter and dart
+
+RESPONSIVE AND ADAPTIVE DESIGN
+(The Design change according to the size of the device and its orientation )
+
+Data of this app ( like questions , options , answer (which is select by user) , result ) are
+manage properly with model classes and with memeory managment.
+
+This app runs successfully on every devices (like android phone , android tabs , iphone , ipad  , web etc...).
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
