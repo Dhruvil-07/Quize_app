@@ -1,2 +1,5 @@
 * .Dart linguist-detectable = true
 * .C++ linguist-detectable = false
+* .XML linguist-detectable = false
+* .CMake linguist-detectable = false
+* .YAML linguist-detectable = fasle
