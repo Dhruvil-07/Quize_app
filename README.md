@@ -10,6 +10,10 @@ RESPONSIVE AND ADAPTIVE DESIGN
 Data of this app ( like questions , options , answer (which is select by user) , result ) are
 manage properly with model classes and with memeory managment.
 
+Themes are also managed with in ths app
+
+In this app , the color and anthers properties of the widget changes based on  the dark and light theme.
+
 This app runs successfully on every devices (like android phone , android tabs , iphone , ipad  , web etc...).
 
 ## Getting Started
