@@ -40,7 +40,7 @@ class start_screen extends StatelessWidget {
             child: ElevatedButton.icon(
                     onPressed: (){ Navigator.push(context, MaterialPageRoute(builder: (context)=> quetion_screen())); },
                     label: Center(child: cario_text(containt: "Start",
-                      fontcolor: Theme.of(context).brightness == Brightness.light ? Colors.white : Colors.black,
+                      fontcolor: Colors.black,
                     )
                     ),
                     icon: Icon(Icons.arrow_right_rounded , size: 30.0,

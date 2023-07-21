@@ -23,7 +23,7 @@ class my_quize extends StatelessWidget
               theme: light_themeData(context),
               darkTheme: dark_themeData(context),
               themeMode: ThemeMode.system,
-              home: quetion_screen(),
+              home: start_screen(),
           ),
         );
     }

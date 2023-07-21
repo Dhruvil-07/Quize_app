@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 
@@ -7,13 +8,20 @@ ThemeData light_themeData(BuildContext context)
 {
     return ThemeData(
 
-        brightness: Brightness.light,
+      brightness: Brightness.light,
       scaffoldBackgroundColor: Colors.white,
+
+      //appbar theme
+      appBarTheme: AppBarTheme().copyWith(
+          backgroundColor: Colors.deepPurple[300],
+          centerTitle: true,
+      ),
 
         //elevate button theme
         elevatedButtonTheme: ElevatedButtonThemeData(
             style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepPurple[600],
+                backgroundColor: Colors.deepPurple[200],
+
             )
         ),
 
@@ -44,6 +52,12 @@ ThemeData dark_themeData(BuildContext context)
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.black,
 
+
+        //appbar theme
+      appBarTheme: AppBarTheme().copyWith(
+        backgroundColor: Colors.deepPurple[300],
+        centerTitle: true,
+      ),
 
         //eleveted button theme
         elevatedButtonTheme: ElevatedButtonThemeData(

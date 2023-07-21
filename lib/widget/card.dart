@@ -60,8 +60,8 @@ class option_card extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-        horizontal: 8.sp,
-        vertical: 12.sp,
+        horizontal: 8.w,
+        vertical: 8.h,
       ),
       child: AnimatedContainer(
         decoration: BoxDecoration(
@@ -95,3 +95,47 @@ class option_card extends StatelessWidget {
     );;
   }
 }
+
+
+//result card
+class result_card extends StatefulWidget
+{
+   result_card({ required this.text , required this.number  , Key? key}) : super(key: key);
+
+  final String text;
+  final int number;
+
+  @override
+  State<result_card> createState() => _result_cardState();
+}
+
+class _result_cardState extends State<result_card> with SingleTickerProviderStateMixin {
+
+  @override
+  Widget build(BuildContext context) {
+    return  Padding(
+      padding: EdgeInsets.symmetric(
+        horizontal: 10.h,
+        vertical : 12.w,
+      ),
+      child: Container(
+        height: 75.h,
+        width: MediaQuery.of(context).size.width,
+        child: Card(
+          color: Theme.of(context).brightness == Brightness.light ? Colors.deepPurple[100] : Colors.deepPurple[400],
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+
+                algeriya_text(containt: widget.text , fontWeight: FontWeight.bold,),
+                SizedBox(width: 30.w,),
+                algeriya_text(containt: "${widget.number}" , fontWeight: FontWeight.bold, fontsize: 23,),
+
+              ],
+            ),
+        ),
+      ),
+    );
+  }
+}
+
