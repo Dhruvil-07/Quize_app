@@ -1,0 +1,7 @@
+
+* .C++ linguist-detectable = false
+* .CMake linguist-detectable = false
+* .Xml linguist-detectable = false
+* .Yaml linguist-detectable = false
+* .JSON linguist-detectable = false
+
