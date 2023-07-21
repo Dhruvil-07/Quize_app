@@ -1,4 +1,4 @@
 * .Dart linguist-detectable = true
 * .C++ linguist-detectable = false
-*  XML linguist-detectable = false
+* .XML linguist-detectable = false
 
